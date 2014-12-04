@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Bound1ess blog</title>
+    <title>Installing Windows 7 on Lenovo G505</title>
     <meta name="description" content="Welcome to my blog where I talk about programming and IT related stuff.">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/2014/12/04/installing-windows-7-on-lenovo-g505.html">
 </head>
 
 
@@ -53,31 +53,46 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Installing Windows 7 on Lenovo G505</h1>
+    <p class="post-meta">Dec 4, 2014</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Dec 4, 2014</span>
+  <article class="post-content">
+    <p>First of all, you need a proper ISO image. You can get one <a href="http://www.techverse.net/download-windows-7-iso-x86-x64-microsofts-official-servers/">here</a>. </p>
 
-        <h2>
-          <a class="post-link" href="/2014/12/04/welcome-to-my-blog.html">Welcome To My Blog</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 4, 2014</span>
+<p>Then you should create a <em>bootable USB/DVD disc</em>. And if you do not know how to do that, 
+there are hundreds of good examples available on the Internet, so just do a quick search.</p>
 
-        <h2>
-          <a class="post-link" href="/2014/12/04/installing-windows-7-on-lenovo-g505.html">Installing Windows 7 on Lenovo G505</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>Then you need to plug in the <em>USB device/DVD disc</em> that you created and shut down your computer afterwards.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>Now look at your shiny <em>G505</em>. There is a small button next to the power button (on its right). Press it and wait a little bit.
+You should see the startup menu. Choose <em>“BIOS setup”</em>.</p>
+
+<p><strong>Now follow these steps:</strong></p>
+
+<ol>
+  <li>
+    <p>Find <em>“SecureBoot”</em> option and disable it. Otherwise you will not be able to perform installation.</p>
+  </li>
+  <li>
+    <p>Now change the boot mode to <em>“Legacy support”</em> (it is set to <em>“UEFI”</em> by default). You can not install Windows 7 on UEFI-based computer without the legacy support mode enabled.</p>
+  </li>
+  <li>
+    <p>You can also change the boot priority to <em>“Legacy first”</em>, although it is optional (if you want to, you can, but it is not required).</p>
+  </li>
+  <li>
+    <p>Then change the boot order using <em>Fn+F5, Fn+F6</em> combinations. You should place your <em>USB device/DVD disc</em> on top of the list.</p>
+  </li>
+</ol>
+
+<p>Now restart your computer and (if you did everything correctly) you will see the Windows 7 installation window.</p>
+
+<p>Have fun!</p>
+
+  </article>
 
 </div>
 

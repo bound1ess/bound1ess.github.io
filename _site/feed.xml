@@ -5,8 +5,8 @@
     <description>Welcome to my blog where I talk about programming and IT related stuff.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Dec 2014 21:41:37 +0600</pubDate>
-    <lastBuildDate>Thu, 04 Dec 2014 21:41:37 +0600</lastBuildDate>
+    <pubDate>Thu, 04 Dec 2014 22:52:03 +0600</pubDate>
+    <lastBuildDate>Thu, 04 Dec 2014 22:52:03 +0600</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -16,6 +16,46 @@
         <pubDate>Thu, 04 Dec 2014 00:00:00 +0600</pubDate>
         <link>/2014/12/04/welcome-to-my-blog.html</link>
         <guid isPermaLink="true">/2014/12/04/welcome-to-my-blog.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installing Windows 7 on Lenovo G505</title>
+        <description>&lt;p&gt;First of all, you need a proper ISO image. You can get one &lt;a href=&quot;http://www.techverse.net/download-windows-7-iso-x86-x64-microsofts-official-servers/&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Then you should create a &lt;em&gt;bootable USB/DVD disc&lt;/em&gt;. And if you do not know how to do that, 
+there are hundreds of good examples available on the Internet, so just do a quick search.&lt;/p&gt;
+
+&lt;p&gt;Then you need to plug in the &lt;em&gt;USB device/DVD disc&lt;/em&gt; that you created and shut down your computer afterwards.&lt;/p&gt;
+
+&lt;p&gt;Now look at your shiny &lt;em&gt;G505&lt;/em&gt;. There is a small button next to the power button (on its right). Press it and wait a little bit.
+You should see the startup menu. Choose &lt;em&gt;“BIOS setup”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Now follow these steps:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find &lt;em&gt;“SecureBoot”&lt;/em&gt; option and disable it. Otherwise you will not be able to perform installation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now change the boot mode to &lt;em&gt;“Legacy support”&lt;/em&gt; (it is set to &lt;em&gt;“UEFI”&lt;/em&gt; by default). You can not install Windows 7 on UEFI-based computer without the legacy support mode enabled.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can also change the boot priority to &lt;em&gt;“Legacy first”&lt;/em&gt;, although it is optional (if you want to, you can, but it is not required).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then change the boot order using &lt;em&gt;Fn+F5, Fn+F6&lt;/em&gt; combinations. You should place your &lt;em&gt;USB device/DVD disc&lt;/em&gt; on top of the list.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now restart your computer and (if you did everything correctly) you will see the Windows 7 installation window.&lt;/p&gt;
+
+&lt;p&gt;Have fun!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Dec 2014 00:00:00 +0600</pubDate>
+        <link>/2014/12/04/installing-windows-7-on-lenovo-g505.html</link>
+        <guid isPermaLink="true">/2014/12/04/installing-windows-7-on-lenovo-g505.html</guid>
         
         
       </item>
