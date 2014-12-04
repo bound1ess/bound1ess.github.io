@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bound1ess blog</title>
+    <description>Welcome to my blog where I talk about programming and IT related stuff.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 04 Dec 2014 21:41:37 +0600</pubDate>
+    <lastBuildDate>Thu, 04 Dec 2014 21:41:37 +0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Welcome To My Blog</title>
+        <description>&lt;p&gt;Hello!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Dec 2014 00:00:00 +0600</pubDate>
+        <link>/2014/12/04/welcome-to-my-blog.html</link>
+        <guid isPermaLink="true">/2014/12/04/welcome-to-my-blog.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
