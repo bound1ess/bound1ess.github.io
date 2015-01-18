@@ -9,21 +9,16 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1>Projects</h1>
-                    <ul class="list-unstyled" ng-controller="ProjectsController" id="projects">
+                <div class="col-md-8" ng-controller="ProjectsController">
+                    <h1>Projects ({{projects.length}})</h1>
+                    <ul class="list-unstyled" id="projects">
                         <li ng-repeat="project in projects">
-                            <strong>
-                                <a href="https://github.com/{{project.github_uri}}" target="_blank">
-                                    {{project.name}}
-                                </a>
-                            </strong>
-                            {{ "- " + project.description + "." }}
+                            <strong><a href="https://github.com/{{project.github_uri}}" target="_blank">{{project.name}}</a></strong>{{", " + project.description + "."}}
                         </li>
                     </ul>
                 </div>
 
-                <div class="cold-md-6">
+                <div class="col-md-4">
                     <h1>Technologies</h1>
                 </div>
             </div>
