@@ -26,4 +26,16 @@
 
         $scope.projects = project.projects;
     }]);
+
+    app.controller("AboutController", ["$scope", "$http", function($scope, $http) {
+        $scope.about = [];
+
+        $http.get("/about.json")
+            .success(function(facts) {
+                $scope.about = facts;
+            })
+            .error(function() {
+                alert("Something went terribly wrong!");
+            });
+    }]);
 })(window.angular);

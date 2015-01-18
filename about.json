@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Who I am",
+        "body": "Passionate programmer interested in Web."
+    },
+    {
+        "title": "What I do",
+        "body": "At the moment, I work only on open-source projects."
+    },
+    {
+        "title": "Languages I speak",
+        "body": "English mainly, Russian as well."
+    },
+    {
+        "title": "Programming languages I use",
+        "body": "PHP, JavaScript, Ruby mostly. Some Bash scripting."
+    }
+]

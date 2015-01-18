@@ -11,6 +11,7 @@
             <div class="row">
                 <div class="col-md-8" ng-controller="ProjectsController">
                     <h1>Projects ({{projects.length}})</h1>
+                    <hr>
                     <ul class="list-unstyled" id="projects">
                         <li ng-repeat="project in projects">
                             <strong><a href="https://github.com/{{project.github_uri}}" target="_blank">{{project.name}}</a></strong>{{", " + project.description + "."}}
@@ -18,8 +19,15 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4">
-                    <h1>Technologies</h1>
+                <div class="col-md-4" ng-controller="AboutController">
+                    <h1>About <a href="https://twitter.com/bound1ess">@bound1ess</a></h1>
+                    <hr>
+                    <div class="list-group">
+                        <div class="list-group-item" ng-repeat="fact in about">
+                            <h4 class="list-group-item-heading">{{fact.title}}</h4>
+                            <p class="list-group-item-text">{{fact.body}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
