@@ -1,5 +1,7 @@
 [
     {
-        "name": "Selectable"
+        "name": "Selectable",
+        "description": "my experiments with Bash",
+        "github_uri": "bound1ess/selectable"
     }
 ]

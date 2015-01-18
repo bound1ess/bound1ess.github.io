@@ -4,12 +4,22 @@
         <meta charset="utf-8">
         <title>bound1ess</title>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/app.css">
     </head>
     <body>
-        <div class="container" ng-controller="ProjectsController">
-            <h1>Notable projects</h1>
-            <ul class="list-unstyled">
-                <li ng-repeat="project in projects">{{project.name}}</li>
+        <div class="container">
+            <h1>bound1ess' personal site</h1>
+
+            <h2>Notable projects</h2>
+            <ul class="list-unstyled" ng-controller="ProjectsController" id="projects">
+                <li ng-repeat="project in projects">
+                    <strong>
+                        <a href="https://github.com/{{project.github_uri}}" target="_blank">
+                            {{project.name}}
+                        </a>
+                    </strong>
+                    {{ "- " + project.description + "." }}
+                </li>
             </ul>
         </div>
 
