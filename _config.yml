@@ -1,8 +1,0 @@
-# Site settings
-title: Bound1ess blog
-email: bound1ess.dev@gmail.com
-description: Welcome to my blog where I talk about programming and IT related stuff.
-baseurl: "" # the subpath of your site, e.g. /blog/
-github_username: bound1ess
-# Build settings
-markdown: kramdown
