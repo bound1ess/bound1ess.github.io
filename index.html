@@ -8,19 +8,25 @@
     </head>
     <body>
         <div class="container">
-            <h1>bound1ess' personal site</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Projects</h1>
+                    <ul class="list-unstyled" ng-controller="ProjectsController" id="projects">
+                        <li ng-repeat="project in projects">
+                            <strong>
+                                <a href="https://github.com/{{project.github_uri}}" target="_blank">
+                                    {{project.name}}
+                                </a>
+                            </strong>
+                            {{ "- " + project.description + "." }}
+                        </li>
+                    </ul>
+                </div>
 
-            <h2>Notable projects</h2>
-            <ul class="list-unstyled" ng-controller="ProjectsController" id="projects">
-                <li ng-repeat="project in projects">
-                    <strong>
-                        <a href="https://github.com/{{project.github_uri}}" target="_blank">
-                            {{project.name}}
-                        </a>
-                    </strong>
-                    {{ "- " + project.description + "." }}
-                </li>
-            </ul>
+                <div class="cold-md-6">
+                    <h1>Technologies</h1>
+                </div>
+            </div>
         </div>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.9/angular.min.js"></script>
