@@ -1,47 +1,14 @@
 [
     {
-        "name": "Shapes",
-        "description": "2D geometric shapes with Bash and sed",
-        "github_uri": "bound1ess/shapes"
+        "name": "Adviser",
+        "github": "bound1ess/adviser",
+        "upcoming": false,
+        "description": "CLI analysis tool for PHP projects"
     },
     {
-        "name": "Time-lord",
-        "description": "work with timestamps in a specific format (JS)",
-        "github_uri": "bound1ess/time-lord"
-    },
-    {
-        "name": "Selectable",
-        "description": "my experiments with Bash",
-        "github_uri": "bound1ess/selectable"
-    },
-    {
-        "name": "Todo app",
-        "description": "practicing JS stack and my very first Angular application",
-        "github_uri": "bound1ess/todo-app"
-    },
-    {
-        "name": "PHP Linter",
-        "description": "user-friendly version of \"php -l\"",
-        "github_uri": "bound1ess/php-linter"
-    },
-    {
-        "name": "Dot",
-        "description": "funny little library providing dot.array.access, PoC-like",
-        "github_uri": "bound1ess/dot"
-    },
-    {
-        "name": "JSON Diff",
-        "description": "shows difference between two JSON strings",
-        "github_uri": "bound1ess/json-diff"
-    },
-    {
-        "name": "Mermaid PHP",
-        "description": "generate Mermaid-compatible graphs in PHP",
-        "github_uri": "bound1ess/mermaid-php"
-    },
-    {
-        "name": "Dotka",
-        "description": "Dota 2 WebAPI wrapper written in Ruby",
-        "github_uri": "bound1ess/dotka"
+        "name": "Essence",
+        "github": "bound1ess/essence",
+        "upcoming": true,
+        "description": "PHP assertion framework with BDD style API"
     }
 ]

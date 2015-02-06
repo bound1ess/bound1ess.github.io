@@ -1,3 +1,3 @@
 # Personal site
 
-I should write something here.
+...which is, in fact, just a simple one-page Angular application (all the data is stored in static JSON files).

@@ -8,7 +8,7 @@
 
         $http.get("/projects.json")
             .success(function(projects) {
-                service.projects = projects;
+                service.projects = projects.reverse();
 
                 $rootScope.$broadcast("projects.updated");
             })

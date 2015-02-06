@@ -10,11 +10,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8" ng-controller="ProjectsController">
-                    <h1>Projects ({{projects.length}})</h1>
+                    <h1>Projects ({{ projects.length }})</h1>
                     <hr>
                     <ul class="list-unstyled" id="projects">
                         <li ng-repeat="project in projects">
-                            <strong><a href="https://github.com/{{project.github_uri}}" target="_blank">{{project.name}}</a></strong>{{", " + project.description + "."}}
+                            <strong><a href="https://github.com/{{project.github}}" target="_blank">{{project.name}}</a></strong>{{", " + project.description}}
+                        ({{ project.upcoming ? "Upcoming" : "Active"}})
                         </li>
                     </ul>
                 </div>
