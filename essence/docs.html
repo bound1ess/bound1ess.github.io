@@ -58,6 +58,7 @@
                 more about it in the advanced section of this tutorial.
             </p>
 
+            <!-- EqualMatcher -->
             <p class="lead">
                 Let's get started. First, we'll take a look at <strong>EqualMatcher</strong>:
             </p>
@@ -84,6 +85,28 @@
             <p class="lead">
                 This example will fail. Can you guess why? That's because Essence always performs <i>strict (===) checks</i>. I hope it's all clear to you, so let's continue on.
             </p>
+            <!-- end of EqualMatcher -->
+
+            <!-- TrueMatcher, FalseMatcher, PositiveMatcher, EmptyMatcher, NullMatcher -->
+            <p class="lead">
+                Now let's review <strong>TrueMatcher, FalseMatcher, PositiveMatcher, EmptyMatcher, NullMatcher</strong>:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">expect(this(false))->to->be->true()->go();
+it(false)->shouldBeFalse->go();
+expect(this(0))->to_be_ok()->go();
+this([])->should_be_empty->go();
+expect(this(null))->not_to_be_null->go();</code></pre>
+
+            <p class="lead">
+                Can you tell what's going to happen? Lines 1, 3, 5 will fail,
+                2 and 4 - succeed.
+
+                The last one will fail because we used <i>not</i> - the inversion keyword.
+                Let's move on and review another 6 matchers:
+            </p>
+            <!-- end -->
 
             <!-- the "advanced" section -->
             <h2><a name="advanced">Advanced</a></h2>
