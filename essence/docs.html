@@ -19,6 +19,7 @@
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#basics">Basics</a></li>
                 <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#summary">Summary</a></li>
             </ul>
 
             <!-- the "features" section -->
@@ -185,7 +186,30 @@ this(new A)->should_respond_to("foo")->go();</code></pre>
             <!-- the "advanced" section -->
             <h2><a name="advanced">Advanced</a></h2>
             <p class="lead">
-                Advanced usage: configuration etc.
+                In order to access Essence, use the <i>essence</i> function:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">essence();
+spl_object_hash(essence()) == spl_object_hash(essence()); // true</code></pre>
+
+            <p class="lead">
+                Configuring is also very simple:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">essence()->configure(function($configuration) {
+    $configuration["links"][] = "a custom link";
+    $configuration["matchers"][] = "Custom\Matcher\Class";
+    $configuration["exception"] = "Custom\Exception\Class";
+
+    return $configuration;
+});</code></pre>
+
+            <!-- the "summary" section -->
+            <h2><a name="summary">Summary</a></h2>
+            <p class="lead">
+                Summary.
             </p>
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
