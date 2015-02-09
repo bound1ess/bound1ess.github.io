@@ -108,6 +108,37 @@ expect(this(null))->not_to_be_null->go();</code></pre>
             </p>
             <!-- end -->
 
+            <!-- AboveMatcher, BelowMatcher, LeastMatcher, MostMatcher, WithinMatcher, CloseMatcher -->
+            <!-- code example -->
+            <pre><code class="php">this(10)->should()->be()->above(9)->go();
+this(10)->should()->be()->below(9)->go();
+this(10)->shouldBeAtLeast(10)->go();
+this(10)->shouldBeAtMost(9)->go();</code></pre>
+
+            <p class="lead">
+                These four are fairly simple and straightforward. Take a look at more complicated examples: close and within. Let's start with <strong>within</strong>.
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">this(10)->should_be_within(9, 11)->go();
+this(10)->should_be_within(9, 10)->go();</code></pre>
+
+            <p class="lead">
+                The first one will succeed (as expected), and the second one....too. Why?
+                Because the range is <i>inclusive</i>. Be careful with that.
+                And here's another matcher that I want to talk about - <strong>close</strong>.
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">expect(this(1.234))->to_be_close_to(1.23, 0.005)->go(); // OK
+this(1.234)->shouldBeCloseTo(1.23, 0.003)->go(); // failed</code></pre>
+
+            <p class="lead">
+                Remember, when you work with <strong>double</strong> values you should always
+                use this matcher, otherwise things <i>may go wrong</i>.
+            </p>
+            <!-- end -->
+
             <!-- the "advanced" section -->
             <h2><a name="advanced">Advanced</a></h2>
             <p class="lead">
