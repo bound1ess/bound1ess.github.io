@@ -140,6 +140,7 @@ this(1.234)->shouldBeCloseTo(1.23, 0.003)->go(); // failed</code></pre>
             <!-- end -->
 
             <!-- LengthMatcher, TypeMatcher, ContainMatcher -->
+            <!-- KeysMatcher, ValuesMatcher -->
             <p class="lead">
                 Now let's take a look at <strong>LengthMatcher, TypeMatcher and ContainMatcher</strong>:
             </p>
@@ -164,6 +165,22 @@ expect(these($elements))->toHaveKey("foo")->go(); // OK
 expect(these($elements))->to->have->value("bar")->go(); // OK</code></pre>
 
             <!-- end -->
+
+            <!-- MatchMatcher, ThrowMatcher, RespondMatcher -->
+
+            <p class="lead">
+                Although we've already reviewed the most important and commonly used matchers, these 3 can also prove to be useful:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">expect(this("awesome string"))->to_match("/some\sstr/")->go();
+expect(this(function() { throw new Exception; }))->not_to_throw("Exception")->go(); // failed
+class A { public function foo() {} }
+this(new A)->should_respond_to("foo")->go();</code></pre>
+
+            <p class="lead">
+                That was a very short introduction to Essence, PHP BDD assertion framework.
+            </p>
 
             <!-- the "advanced" section -->
             <h2><a name="advanced">Advanced</a></h2>
