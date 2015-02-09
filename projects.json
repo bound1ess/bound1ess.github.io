@@ -2,7 +2,7 @@
     {
         "name": "Adviser",
         "github": "bound1ess/adviser",
-        "upcoming": false,
+        "upcoming": true,
         "description": "CLI analysis tool for PHP projects"
     },
     {
