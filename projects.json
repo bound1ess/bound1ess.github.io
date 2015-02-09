@@ -2,13 +2,13 @@
     {
         "name": "Adviser",
         "github": "bound1ess/adviser",
-        "upcoming": true,
+        "upcoming": false,
         "description": "CLI analysis tool for PHP projects"
     },
     {
         "name": "Essence",
         "github": "bound1ess/essence",
-        "upcoming": true,
+        "upcoming": false,
         "description": "PHP assertion framework with BDD style API"
     }
 ]
