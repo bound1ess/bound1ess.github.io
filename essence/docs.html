@@ -36,7 +36,10 @@
             <p class="lead">
                 Run in the terminal (in your project's root directory):
             </p>
+
+            <!-- code example -->
             <pre><code class="bash">composer require --dev bound1ess/essence</code></pre>
+
             <p class="lead">
                 Congrats, you're all set!
             </p>
@@ -44,7 +47,42 @@
             <!-- the "basics" section -->
             <h2><a name="basics">Basics</a></h2>
             <p class="lead">
-                The very basics of Essence.
+                In the examples below I will use both <i>expect</i> and <i>should</i>
+                assertion styles.
+            </p>
+
+            <p class="lead">
+                I will show you how to use every single <i>matcher</i> that comes with Essence.
+
+                You can also create your own matchers,
+                more about it in the advanced section of this tutorial.
+            </p>
+
+            <p class="lead">
+                Let's get started. First, we'll take a look at <strong>EqualMatcher</strong>:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">this("string")->should_be_equal_to("foobar")->go();</code></pre>
+
+            <p class="lead">
+                This line will throw an exception (<i>Essence\Exceptions\AssertionException</i>),
+                because "string" is obviously not equal to "foobar". Let's do one more:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">expect(this(123))->toBeEqual(123)->go();</code></pre>
+
+            <p class="lead">
+                This will (just as you might expect) return <strong>true</strong>.
+                But what about this one?
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">this(new stdClass)->should->be->equal(new stdClass)->go();</code></pre>
+
+            <p class="lead">
+                This example will fail. Can you guess why? That's because Essence always performs <i>strict (===) checks</i>. I hope it's all clear to you, so let's continue on.
             </p>
 
             <!-- the "advanced" section -->
