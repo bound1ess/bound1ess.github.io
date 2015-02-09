@@ -139,6 +139,32 @@ this(1.234)->shouldBeCloseTo(1.23, 0.003)->go(); // failed</code></pre>
             </p>
             <!-- end -->
 
+            <!-- LengthMatcher, TypeMatcher, ContainMatcher -->
+            <p class="lead">
+                Now let's take a look at <strong>LengthMatcher, TypeMatcher and ContainMatcher</strong>:
+            </p>
+
+            <!-- code example -->
+            <pre><code class="php">$elements = [1, 2, 3, 4, 5];
+expect(these($elements))->toBeOfLength(5)->go();
+this("string")->to_be_of_length(5)->go(); // failed</code></pre>
+
+            <!-- code example -->
+            <pre><code class="php">expect(this(123))->toBeOfType("integer")->go();
+this([1, 2, 3])->should_have_type("double")->go(); // failed
+this(new stdClass)->should_be_a("stdClass")->go();
+this([1, 2, 3])->should_be_an("array")->go();</code></pre>
+
+            <!-- code example -->
+            <pre><code class="php">$elements = ["foo" => "bar"];
+expect(these($elements))->keys_to_have("foo")->go(); // OK
+these($elements)->should_contain("bar")->go(); // OK
+these($elements)->keys_should_include("foo")->go(); // OK
+expect(these($elements))->toHaveKey("foo")->go(); // OK
+expect(these($elements))->to->have->value("bar")->go(); // OK</code></pre>
+
+            <!-- end -->
+
             <!-- the "advanced" section -->
             <h2><a name="advanced">Advanced</a></h2>
             <p class="lead">
