@@ -5,6 +5,7 @@
         <title>Essence documentation</title>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="/essence/docs.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
     </head>
     <body>
         <div class="container">
@@ -13,7 +14,7 @@
 
             <!-- the navigation menu -->
             <h2>Navigation</h2>
-            <ul class="list-unstyled" id="navigation-menu">
+            <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#basics">Basics</a></li>
@@ -21,29 +22,38 @@
             </ul>
 
             <!-- the "features" section -->
-            <h2 name="features">Features</h2>
+            <h2><a name="features">Features</a></h2>
             <p class="lead">
-                There should be a list.
+                <ul>
+                    <li>Great readability</li>
+                    <li>Flexibility</li>
+                    <li>Fairly customizable</li>
+                </ul>
             </p>
 
             <!-- the "installation" section -->
-            <h2 name="installation">Installation</h2>
+            <h2><a name="installation">Installation</a></h2>
             <p class="lead">
-                This is how you do it.
+                Run in the terminal (in your project's root directory):
+            </p>
+            <pre><code class="bash">composer require --dev bound1ess/essence</code></pre>
+            <p class="lead">
+                Congrats, you're all set!
             </p>
 
             <!-- the "basics" section -->
-            <h2 name="basics">Basics</h2>
+            <h2><a name="basics">Basics</a></h2>
             <p class="lead">
                 The very basics of Essence.
             </p>
 
             <!-- the "advanced" section -->
-            <h2 name="advanced">Advanced</h2>
+            <h2><a name="advanced">Advanced</a></h2>
             <p class="lead">
                 Advanced usage: configuration etc.
             </p>
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
