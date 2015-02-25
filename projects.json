@@ -10,5 +10,11 @@
         "github": "bound1ess/essence",
         "upcoming": false,
         "description": "PHP assertion framework with BDD style API"
+    },
+    {
+        "name": "LESS compiler",
+        "github": "bound1ess/less-compiler",
+        "upcoming": true,
+        "description": "LESS into CSS without pain"
     }
 ]
