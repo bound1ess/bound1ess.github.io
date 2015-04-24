@@ -1,6 +1,6 @@
 (function(angular) {
     var app = angular.module("bound1ess", []);
-    
+
     app.service("Project", ["$rootScope", "$http", function($rootScope, $http) {
         var service = {
             projects: [],
